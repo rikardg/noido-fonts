@@ -1,0 +1,23 @@
+[package]
+name = "noido-fonts"
+version = "0.1.0"
+edition = "2024"
+description = "Bundled, deflated fonts for noido's typesetter, one feature per family"
+license = "OFL-1.1 AND LPPL-1.3c"
+build = "build.rs"
+
+[features]
+default = []
+libron = []
+libertinus-serif = []
+libertinus-sans = []
+newcm = []
+monaspace-neon = []
+alegreya-sans = []
+
+[build-dependencies]
+flate2 = "1"
+ttf-parser = "0.25"
+
+[dev-dependencies]
+flate2 = "1"
